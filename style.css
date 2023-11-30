@@ -1,0 +1,46 @@
+button {
+    padding: 7px;
+    cursor: pointer;
+}
+div:not(:last-child) { /**set spacing between divs**/
+    padding: 20px;
+}
+
+img {
+    height: 300px;
+    width: auto;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+#container {
+    border: 2px groove black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+
+#date{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#img {
+    text-align: center;
+}
+
+#text {
+    text-align: center;
+    font-size: 1em;
+}
+
+#title {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+}

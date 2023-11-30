@@ -22,4 +22,22 @@ const displayDATA = data => {
     document.getElementById('text').textContent = data.explanation
 }
 
+document.getElementById('btn').addEventListener('click', () => {
+    let t2s = document.getElementById('text').textContent;
+    const text2speech = new SpeechSynthesisUtterance(t2s);
+    speechSynthesis.cancel(text2speech);
+    speechSynthesis.speak(text2speech);
+});
+
+document.getElementById('Pbtn').addEventListener('click', () => {
+    let t2s = document.getElementById('text').textContent;
+    const text2speech = new SpeechSynthesisUtterance(t2s);
+    speechSynthesis.pause(text2speech)
+});
+
+document.getElementById('Rbtn').addEventListener('click', () => {
+    let t2s = document.getElementById('text').textContent;
+    const text2speech = new SpeechSynthesisUtterance(t2s);
+    speechSynthesis.resume(text2speech)
+});
 APOD()
